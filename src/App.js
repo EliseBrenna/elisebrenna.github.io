@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Logo, StyledApp, NavBar, Menu, MenuItems } from "./StyledApp";
+import LogoSrc from "./logo.png";
+import { useState } from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <StyledApp>
+      <NavBar>
+        <Logo src={LogoSrc} />
+        <Menu
+          aria-controls="jkl-example-menu-placeholder"
+          id="jkl-example-hamburger"
+          isOpen={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+          actionLabel={undefined}
+        />
+        <div
+          id="jkl-example-menu-placeholder"
+          aria-labelledby="jkl-example-hamburger"
+          role="group"
+          hidden={!isOpen}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Menyinnholdet ville vært inni et element med disse attributtene
+        </div>
+        <MenuItems></MenuItems>
+      </NavBar>
+    </StyledApp>
   );
 }
 
