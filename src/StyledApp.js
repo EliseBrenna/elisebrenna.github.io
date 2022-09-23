@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { Hamburger } from "@fremtind/jkl-hamburger-react";
-import "@fremtind/jkl-hamburger/hamburger.min.css";
 
 export const StyledApp = styled.div`
 font-family: 'Inter', sans-serif;
@@ -20,25 +18,27 @@ color: #040631;
 
 `;
 
-export const Menu = styled(Hamburger)`
-color:  #040631;
-
-.jkl-hamburger__lines, .jkl-hamburger__lines::before, .jkl-hamburger__lines::after {
-    height: 0.2rem;
-}
-`;
-
 export const MenuItems = styled.ul`
 list-style-type: none;
 display: flex;
-width: 50%;
+width: 20%;
 justify-content: space-between;
 
 li {
+    border: 1px solid #040631;
+    border-radius: 5px;
+    padding: 0.4rem;
+    transform: 250ms;
 
+
+    :hover {
+        background-color: #040631;
+        color: white;
+        transform: translateY(-10px);
+    }
 }
 `;
 
 export const Logo = styled.img`
-height: 5rem;
+height: 4rem;
 `;

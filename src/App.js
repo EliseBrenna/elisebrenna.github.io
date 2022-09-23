@@ -1,31 +1,40 @@
-import { Logo, StyledApp, NavBar, Menu, MenuItems } from "./StyledApp";
-import LogoSrc from "./logo.png";
-import { useState } from "react";
+import { Logo, StyledApp, NavBar, MenuItems } from './StyledApp';
+import LogoSrc from './logo.png';
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <StyledApp>
+          <AnimatedCursor
+      outerSize={8}
+      color='4, 6, 49'
+      outerAlpha={0}
+      innerScale={0.7}
+      innerSize	={8}
+      outerScale={5}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link'
+      ]}
+    />
       <NavBar>
-        <Logo src={LogoSrc} />
-        <Menu
-          aria-controls="jkl-example-menu-placeholder"
-          id="jkl-example-hamburger"
-          isOpen={isOpen}
-          onClick={() => setIsOpen(!isOpen)}
-          actionLabel={undefined}
-        />
-        <div
-          id="jkl-example-menu-placeholder"
-          aria-labelledby="jkl-example-hamburger"
-          role="group"
-          hidden={!isOpen}
-        >
-          Menyinnholdet ville vært inni et element med disse attributtene
-        </div>
-        <MenuItems></MenuItems>
+      <Logo src={LogoSrc}/>
+      <MenuItems>
+      <li>Om</li>
+      <li>Områder</li>
+      <li>Kontakt</li>
+      </MenuItems>
       </NavBar>
+
     </StyledApp>
   );
 }
