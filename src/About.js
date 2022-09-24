@@ -3,7 +3,7 @@ import StyledAbout from "./StyledAbout";
 const About = () => {
   return (
     <StyledAbout>
-      <div>
+
       <h3>Om</h3>
       <p>
         Vi formidler eiendom for Mojácar Estates i Andalucía/Almería-regionen i Spania.
@@ -13,7 +13,7 @@ const About = () => {
 
         
       </p>
-      </div>
+
 
     </StyledAbout>
   );
