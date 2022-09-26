@@ -53,10 +53,16 @@ function App() {
     <BrowserRouter>
       <StyledApp>
         <NavBar>
-          <NavLink to="/"><Logo src={LogoSrc} /></NavLink>
+          <NavLink to="/">
+            <Logo src={LogoSrc} />
+          </NavLink>
           <MenuItems>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <NavLink to="/om">Om</NavLink>
+              <NavLink
+                to="/om"
+              >
+                Om
+              </NavLink>
             </li>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <NavLink to="/omrader">Områder</NavLink>
@@ -74,7 +80,17 @@ function App() {
         />
 
         <Routes>
-          <Route path="/" element={<Map onMouseEnter onMouseLeave textEnter={textEnter} textLeave={textLeave}/>} />
+          <Route
+            path="/"
+            element={
+              <Map
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
           <Route path="/om" element={<About />} />
           <Route path="/omrader" element={<Areas />} />
           <Route path="/kontakt" element={<Contact />} />

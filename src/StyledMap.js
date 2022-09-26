@@ -3,13 +3,14 @@ import styled from "styled-components";
 const StyledMap = styled.div`
   display: flex;
   align-items: flex-end;
-  height: 81vh;
+  width: 100%;
+
 
   img {
-    width: 100%;
+    width: 103%;
+    height: 400px;
     opacity: 90%;
     position: fixed;
-    left: 0;
   }
 
   .pin {

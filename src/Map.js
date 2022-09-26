@@ -1,4 +1,4 @@
-import MapSVG from "./map.svg";
+import MapPNG from "./map.png";
 import StyledMap from "./StyledMap";
 
 const Map = ({textEnter, textLeave, onMouseEnter, onMouseLeave}) => {
@@ -38,7 +38,7 @@ const Map = ({textEnter, textLeave, onMouseEnter, onMouseLeave}) => {
         <div className="pin sanjuan" onMouseEnter={textEnter} onMouseLeave={textLeave} ></div>
         <a className="pin-name sanjuanname" onMouseEnter={textEnter} onMouseLeave={textLeave} >San Juan De Los Terreros</a>
 
-      <img src={MapSVG} alt="map" />
+      <img src={MapPNG} alt="map" />
     </StyledMap>
   );
 };
