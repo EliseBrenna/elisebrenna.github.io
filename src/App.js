@@ -64,7 +64,7 @@ function App() {
               <NavLink to="/omrader">Områder</NavLink>
             </li>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <NavLink to="/kontakt">Kontakt</NavLink>
+              <NavLink to="/kontakt">Kontakt oss</NavLink>
             </li>
           </MenuItems>
         </NavBar>
@@ -98,8 +98,28 @@ function App() {
               />
             }
           />
-          <Route path="/omrader" element={<Areas />} />
-          <Route path="/kontakt" element={<Contact />} />
+          <Route
+            path="/omrader"
+            element={
+              <Areas
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/kontakt"
+            element={
+              <Contact
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
         </Routes>
       </StyledApp>
     </BrowserRouter>

@@ -8,7 +8,7 @@ const About = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
         <h2>Formidling av eiendom på solens kyst</h2>
         <p>
           {" "}
-          Ja, med 306 soldager i året velger vi å kalle det nettopp dette.{" "}
+          Ja, med 306 soldager i året velger vi å kalle Spanias østkyst nettopp dette.{" "}
         </p>
         <p>
           Vi er et norsk selskap som samarbeider med{" "}
@@ -26,8 +26,8 @@ const About = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
           forøvrig hatt egen leilighet i Mojacar siden 2003 og kjenner derfor
           området meget godt. Med vår eksklusive formidlingsavtale med Mojacar
           Estates ønsker vi norske kunder hjertelig velkommen, da dette
-          fantastiske området som kalles "The Real Spain" og "A place in the
-          Sun" bare må oppleves.
+          fantastiske området som kalles "the real Spain" og "a place in the
+          sun" bare må oppleves.
         </p>
       </div>
     </StyledAbout>
