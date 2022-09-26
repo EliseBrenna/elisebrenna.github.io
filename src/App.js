@@ -58,11 +58,7 @@ function App() {
           </NavLink>
           <MenuItems>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <NavLink
-                to="/om"
-              >
-                Om
-              </NavLink>
+              <NavLink to="/om">Om</NavLink>
             </li>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <NavLink to="/omrader">Områder</NavLink>
@@ -91,7 +87,17 @@ function App() {
               />
             }
           />
-          <Route path="/om" element={<About />} />
+          <Route
+            path="/om"
+            element={
+              <About
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
           <Route path="/omrader" element={<Areas />} />
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
