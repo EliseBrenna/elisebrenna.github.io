@@ -4,6 +4,7 @@ export const StyledApp = styled.div`
   display: flex;
   height: 100vh;
   flex-wrap: wrap;
+  justify-content: center;
   font-family: "Inter", sans-serif;
   cursor: none;
 
@@ -21,13 +22,13 @@ export const StyledApp = styled.div`
 
 export const NavBar = styled.div`
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 10%;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
   color: #040631;
-  margin: 2% 4%;
+  padding: 2rem 0;
 `;
 
 export const MenuItems = styled.ul`
@@ -61,4 +62,5 @@ export const MenuItems = styled.ul`
 
 export const Logo = styled.img`
   height: 4.5rem;
+  cursor: none;
 `;

@@ -53,10 +53,11 @@ function App() {
     <BrowserRouter>
       <StyledApp>
         <NavBar>
-          <NavLink to="/">
             <Logo src={LogoSrc} />
-          </NavLink>
           <MenuItems>
+          <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <NavLink to="/">Hjem</NavLink>
+            </li>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <NavLink to="/om">Om</NavLink>
             </li>

@@ -3,13 +3,20 @@ import styled from "styled-components";
 const StyledMap = styled.div`
   display: flex;
   align-items: flex-end;
+  height: 82%;
   width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(234, 191, 57, 0.46124387254901966) 15%,
+    rgba(4, 6, 49, 0.486453956582633) 61%
+  );
 
 
   img {
     width: 103%;
     height: 400px;
-    opacity: 90%;
     position: fixed;
   }
 
@@ -27,6 +34,8 @@ const StyledMap = styled.div`
     animation-name: bounce;
     animation-fill-mode: both;
     animation-duration: 1s;
+
+
   }
 
   .mojacar {
