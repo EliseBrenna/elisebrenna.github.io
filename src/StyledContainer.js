@@ -29,14 +29,12 @@ img {
   width: 100%;
   box-shadow: 0 0.25rem 0.9375rem #252a311a;
   }
-`
+`;
 export const Text = styled.div`
 display: flex;
 flex-wrap: wrap;
 height: 100%;
 width: 55%;
-justify-content: flex-end;
-text-align: left;
 
 
 h2 {
@@ -60,9 +58,11 @@ p {
 
 export const ImageGrid = styled.div`
 position: relative;
+  height: 100%;
 
 img {
   width: 100%;
+  height: 100%;
   opacity: 50%;
 }
 
@@ -71,5 +71,7 @@ div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: 400;
+  text-align: center;
 }
 `;

@@ -6,6 +6,10 @@ import {
 } from "./StyledContainer";
 import Grid from "@mui/material/Grid";
 import BeachSrc from "./beach.jpg";
+import Aguilas from "./aguilas.jpg"
+import Allariz from "./allariz.jpg"
+import Bedar from "./bedar.jpg"
+import Turre from "./turre.jpg"
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
@@ -14,25 +18,25 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
         <Grid container spacing={4}>
           <Grid item xs={3}>
             <ImageGrid>
-              <img src={BeachSrc} />
+            <img src={Aguilas} />
               <div>Aguilas</div>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
-              <img src={BeachSrc} />
+              <img src={Allariz} />
               <div>Aljariz</div>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
-              <img src={BeachSrc} />
+              <img src={Bedar} />
               <div>Bedar</div>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
-              <img src={BeachSrc} />
+              <img src={Turre} />
               <div>Cabrera</div>
             </ImageGrid>
           </Grid>
