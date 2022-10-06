@@ -74,4 +74,17 @@ div {
   font-weight: 400;
   text-align: center;
 }
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
 `;

@@ -10,6 +10,7 @@ import Aguilas from "./aguilas.jpg"
 import Allariz from "./allariz.jpg"
 import Bedar from "./bedar.jpg"
 import Turre from "./turre.jpg"
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
@@ -19,7 +20,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
           <Grid item xs={3}>
             <ImageGrid>
             <img src={Aguilas} />
-              <div>Aguilas</div>
+            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <NavLink to="/aguilas">Aguilas</NavLink>
+            </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>

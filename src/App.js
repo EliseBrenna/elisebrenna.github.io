@@ -5,6 +5,7 @@ import About from "./About";
 import Map from "./Map";
 import Contact from "./Contact";
 import Areas from "./Areas";
+import Aguilas from "./Aguilas";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -53,9 +54,9 @@ function App() {
     <BrowserRouter>
       <StyledApp>
         <NavBar>
-            <Logo src={LogoSrc} />
+          <Logo src={LogoSrc} />
           <MenuItems>
-          <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <NavLink to="/">Hjem</NavLink>
             </li>
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -114,6 +115,17 @@ function App() {
             path="/kontakt"
             element={
               <Contact
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/aguilas"
+            element={
+              <Aguilas
                 onMouseEnter
                 onMouseLeave
                 textEnter={textEnter}
