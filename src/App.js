@@ -6,6 +6,8 @@ import Map from "./Map";
 import Contact from "./Contact";
 import Areas from "./Areas";
 import Aguilas from "./Aguilas";
+import Aljariz from "./Aljariz";
+import Bedar from "./Bedar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -126,6 +128,28 @@ function App() {
             path="/aguilas"
             element={
               <Aguilas
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/aljariz"
+            element={
+              <Aljariz
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+                    <Route
+            path="/bedar"
+            element={
+              <Bedar
                 onMouseEnter
                 onMouseLeave
                 textEnter={textEnter}

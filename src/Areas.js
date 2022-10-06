@@ -6,10 +6,10 @@ import {
 } from "./StyledContainer";
 import Grid from "@mui/material/Grid";
 import BeachSrc from "./beach.jpg";
-import Aguilas from "./aguilas.jpg"
-import Allariz from "./allariz.jpg"
-import Bedar from "./bedar.jpg"
-import Turre from "./turre.jpg"
+import Aguilas from "./aguilas.jpg";
+import Allariz from "./allariz.jpg";
+import Bedar from "./bedar.jpg";
+import Turre from "./turre.jpg";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
@@ -19,22 +19,26 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
         <Grid container spacing={4}>
           <Grid item xs={3}>
             <ImageGrid>
-            <img src={Aguilas} />
-            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <NavLink to="/aguilas">Águilas</NavLink>
-            </li>
+              <img src={Aguilas} />
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/aguilas">Águilas</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
               <img src={Allariz} />
-              <div>Aljariz</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/aljariz">Aljariz</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
               <img src={Bedar} />
-              <div>Bedar</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/bedar">Bedar</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
