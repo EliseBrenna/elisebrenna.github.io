@@ -19,7 +19,11 @@ const Aguilas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             turistfasiliteter, som gjør det meste ut av en av
             hovedattraksjonene, den omfattende kystlinjen.
           </p>
-          <p>Trykk her for å se tilgjengelige eiendommer i Aguilas.</p>
+          <p>Trykk <a
+            href="https://mojacarestates.com/search?ss=s&t=2522333&y=&d=&c=&s=&nb=&mb=&na=&ma=&ms=&np=&mp=&fm=&to="
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
+          >her</a> for å se tilgjengelige eiendommer i Aguilas.</p>
         </Text>
       </Content>
     </StyledContainer>
