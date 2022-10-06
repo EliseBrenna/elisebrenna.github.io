@@ -12,7 +12,7 @@ const Bedar = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
       <Content>
         <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
         <Text>
-          <h2>Aljariz</h2>
+          <h2>Bedar</h2>
           <p>
             Den uberørte hvite landsbyen
             Bédar ligger i en østvendt dal ved foten av Sierra de los Filabres,
