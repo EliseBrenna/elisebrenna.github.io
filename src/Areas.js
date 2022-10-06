@@ -21,7 +21,7 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             <ImageGrid>
             <img src={Aguilas} />
             <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <NavLink to="/aguilas">Aguilas</NavLink>
+              <NavLink to="/aguilas">Águilas</NavLink>
             </li>
             </ImageGrid>
           </Grid>

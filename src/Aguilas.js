@@ -12,7 +12,7 @@ const Aguilas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
       <Content>
         <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
         <Text>
-          <h2>Aguilas</h2>
+          <h2>Águilas</h2>
           <p>
             Águilas er en herlig havneby som ligger på Costa Cálida. En
             tradisjon for sjøfart kombineres nå med et bredt spekter av

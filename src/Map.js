@@ -29,7 +29,7 @@ const Map = ({textEnter, textLeave, onMouseEnter, onMouseLeave}) => {
         <a className="pin-name calapanizoname" onMouseEnter={textEnter} onMouseLeave={textLeave} >Cala Panizo</a>
 
         <div className="pin aguilas" onMouseEnter={textEnter} onMouseLeave={textLeave} ></div>
-        <a className="pin-name aguilasname" onMouseEnter={textEnter} onMouseLeave={textLeave} >Aguilas</a>
+        <a className="pin-name aguilasname" onMouseEnter={textEnter} onMouseLeave={textLeave} >Águilas</a>
 
         <div className="pin pulpi" onMouseEnter={textEnter} onMouseLeave={textLeave} ></div>
         <a className="pin-name pulpiname" onMouseEnter={textEnter} onMouseLeave={textLeave} >Pulpi</a>
