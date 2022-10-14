@@ -4,7 +4,7 @@ import {
   ImgContainer,
   Text,
 } from "./StyledContainer";
-import BeachSrc from "./beach.jpg";
+import BeachSrc from "./images/beach.jpg";
 
 const About = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (

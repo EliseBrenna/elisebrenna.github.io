@@ -1,4 +1,4 @@
-import MapPNG from "./map.png";
+import MapPNG from "./images/map.png";
 import StyledMap from "./StyledMap";
 
 const Map = ({textEnter, textLeave, onMouseEnter, onMouseLeave}) => {

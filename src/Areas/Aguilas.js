@@ -4,7 +4,7 @@ import {
   Heading,
   Content,
   Text,
-} from "./StyledContainer";
+} from "../StyledContainer";
 
 const Aguilas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (

@@ -1,13 +1,14 @@
 import { Logo, StyledApp, NavBar, MenuItems, Ingres } from "./StyledApp";
-import LogoSrc from "./logo.png";
+import LogoSrc from "./images/logo.png";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import About from "./About";
 import Map from "./Map";
 import Contact from "./Contact";
-import Areas from "./Areas";
-import Aguilas from "./Aguilas";
-import Aljariz from "./Aljariz";
-import Bedar from "./Bedar";
+import Areas from "./Areas/Areas";
+import Aguilas from "./Areas/Aguilas";
+import Aljariz from "./Areas/Aljariz";
+import Bedar from "./Areas/Bedar";
+import Cabrera from "./Areas/Cabrera";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -146,10 +147,21 @@ function App() {
               />
             }
           />
-                    <Route
+          <Route
             path="/bedar"
             element={
               <Bedar
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+                    <Route
+            path="/cabrera"
+            element={
+              <Cabrera
                 onMouseEnter
                 onMouseLeave
                 textEnter={textEnter}

@@ -3,13 +3,13 @@ import {
   Content,
   ImgContainer,
   ImageGrid,
-} from "./StyledContainer";
+} from "../StyledContainer";
 import Grid from "@mui/material/Grid";
-import BeachSrc from "./beach.jpg";
-import Aguilas from "./aguilas.jpg";
-import Allariz from "./allariz.jpg";
-import Bedar from "./bedar.jpg";
-import Turre from "./turre.jpg";
+import BeachSrc from "../images/beach.jpg";
+import Aguilas from "../images/aguilas.jpg";
+import Allariz from "../images/allariz.jpg";
+import Bedar from "../images/bedar.jpg";
+import Turre from "../images/turre.jpg";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
@@ -44,7 +44,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
           <Grid item xs={3}>
             <ImageGrid>
               <img src={Turre} />
-              <div>Cabrera</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/cabrera">Cabrera</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>

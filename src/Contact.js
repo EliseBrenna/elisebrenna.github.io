@@ -5,8 +5,6 @@ import {
   Content,
   Text,
 } from "./StyledContainer";
-import MojacarSrc from "./mojacar.jpg";
-import Mojacar2Src from "./mojacar2.jpg";
 
 const Contact = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (

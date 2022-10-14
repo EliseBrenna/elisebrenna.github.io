@@ -4,20 +4,20 @@ import {
   Heading,
   Content,
   Text,
-} from "./StyledContainer";
+} from "../StyledContainer";
 
-const Bedar = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
+const Aljariz = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
     <StyledContainer>
       <Content>
         <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
         <Text>
-          <h2>Bedar</h2>
+          <h2>Aljariz</h2>
           <p>
-            Den uberørte hvite landsbyen
-            Bédar ligger i en østvendt dal ved foten av Sierra de los Filabres,
-            hvis høye topper, på avstand, ser ut til å omslutte byen i en
-            vennlig omfavnelse og beskytter byen mot de kjøligere vindene som kan blåse fra nord og vest om vinteren.
+            Aljariz helt øst i Almeria-provinsen, ligger i den brede, fruktbare
+            dalen Rio Antas, omtrent 15 kilometer fra Middelhavskysten. Aljariz er
+            omgitt av små markedshager som dyrker salatgrønnsaker, bønner, erter
+            og kål og frukthager kjent for sine appelsiner og sitroner.
           </p>
           <p>
             Trykk{" "}
@@ -28,7 +28,7 @@ const Bedar = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             >
               her
             </a>{" "}
-            for å se tilgjengelige eiendommer i Aguilas.
+            for å se tilgjengelige objekter i Aljariz.
           </p>
         </Text>
       </Content>
@@ -36,4 +36,4 @@ const Bedar = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   );
 };
 
-export default Bedar;
+export default Aljariz;
