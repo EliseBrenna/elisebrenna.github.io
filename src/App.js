@@ -9,6 +9,16 @@ import Aguilas from "./Areas/Aguilas";
 import Aljariz from "./Areas/Aljariz";
 import Bedar from "./Areas/Bedar";
 import Cabrera from "./Areas/Cabrera";
+import CalaPanizo from "./Areas/CalaPanizo";
+import Carboneras from "./Areas/Carboneras";
+import ElPozoDelEsparto from "./Areas/ElPozoDelEsparto";
+import CuevasDelAlmanzora from "./Areas/CuevasDelAlmanzora";
+import HuercalOvera from "./Areas/HuercalOvera";
+import LaMuleria from "./Areas/LaMuleria";
+import Garrucha from "./Areas/Garrucha";
+import LasCunas from "./Areas/LasCunas";
+import LosGallardos from "./Areas/LosGallardos";
+import LosLobos from "./Areas/LosLobos";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -158,10 +168,120 @@ function App() {
               />
             }
           />
-                    <Route
+          <Route
             path="/cabrera"
             element={
               <Cabrera
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/calapanizo"
+            element={
+              <CalaPanizo
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/carboneras"
+            element={
+              <Carboneras
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/cuevasdelalmanzora"
+            element={
+              <CuevasDelAlmanzora
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/elpozodelesparto"
+            element={
+              <ElPozoDelEsparto
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/garrucha"
+            element={
+              <Garrucha
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/huercalovera"
+            element={
+              <HuercalOvera
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/lamuleria"
+            element={
+              <LaMuleria
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/lascunas"
+            element={
+              <LasCunas
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/losgallardos"
+            element={
+              <LosGallardos
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/loslobos"
+            element={
+              <LosLobos
                 onMouseEnter
                 onMouseLeave
                 textEnter={textEnter}

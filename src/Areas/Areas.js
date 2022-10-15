@@ -52,32 +52,42 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
           <Grid item xs={3}>
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Cala Panizo</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/calapanizo">Cala Panizo</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Carboneras</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/carboneras">Carboneras</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Cueas del Almanzora</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/cuevasdelalmanzora">Cuevas Del Almanzora</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>El Pozo del Esparto</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/elpozodelesparto">El Pozo Del Esparto</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
           <Grid item xs={3}>
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Garrucha</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/garrucha">Garrucha</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
@@ -85,7 +95,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Huercal-Overa</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/huercalovera">Huercal-Overa</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
@@ -93,7 +105,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>La Muleria</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/lamuleria">La Muleria</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
@@ -101,7 +115,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Las Cunas</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/lascunas">Las Cunas</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
@@ -109,7 +125,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Los Gallardos</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/losgallardos">Los Gallardos</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
@@ -117,7 +135,9 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             {" "}
             <ImageGrid>
               <img src={BeachSrc} />
-              <div>Los Lobos</div>
+              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <NavLink to="/loslobos">Los Lobos</NavLink>
+              </li>
             </ImageGrid>
           </Grid>
 
