@@ -19,6 +19,18 @@ import Garrucha from "./Areas/Garrucha";
 import LasCunas from "./Areas/LasCunas";
 import LosGallardos from "./Areas/LosGallardos";
 import LosLobos from "./Areas/LosLobos";
+import Lubrin from "./Areas/Lubrin";
+import Mojacar from "./Areas/Mojacar";
+import PuertoRey from "./Areas/PuertoRey";
+import Palomares from "./Areas/Palomares";
+import Pulpi from "./Areas/Pulpi";
+import SanJuan from "./Areas/SanJuan";
+import Sorbas from "./Areas/Sorbas";
+import Turre from "./Areas/Turre";
+import Urcal from "./Areas/Urcal";
+import Vera from "./Areas/Vera";
+import VeraPlaya from "./Areas/VeraPlaya";
+import Villaricos from "./Areas/Villaricos";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -282,6 +294,138 @@ function App() {
             path="/loslobos"
             element={
               <LosLobos
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/lubrin"
+            element={
+              <Lubrin
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/mojacar"
+            element={
+              <Mojacar
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/palomares"
+            element={
+              <Palomares
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/puertorey"
+            element={
+              <PuertoRey
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/pulpi"
+            element={
+              <Pulpi
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/sanjuan"
+            element={
+              <SanJuan
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/sorbas"
+            element={
+              <Sorbas
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/turre"
+            element={
+              <Turre
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/urcal"
+            element={
+              <Urcal
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/vera"
+            element={
+              <Vera
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/veraplaya"
+            element={
+              <VeraPlaya
+                onMouseEnter
+                onMouseLeave
+                textEnter={textEnter}
+                textLeave={textLeave}
+              />
+            }
+          />
+          <Route
+            path="/villaricos"
+            element={
+              <Villaricos
                 onMouseEnter
                 onMouseLeave
                 textEnter={textEnter}
