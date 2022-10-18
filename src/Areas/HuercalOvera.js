@@ -12,7 +12,7 @@ const HuercalOvera = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
       <Content>
         <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
         <Text>
-          <h2>Huercal-Overa</h2>
+          <h2>Huércal-Overa</h2>
           <p>
             Byen ligger mellom to grener av Almanzora-elven. Huércal Overa er en
             markedsby med mye av sentrum som overtas av markedet hver mandag
@@ -31,7 +31,7 @@ const HuercalOvera = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             >
               her
             </a>{" "}
-            for å se tilgjengelige objekter i Huercal-Overa.
+            for å se tilgjengelige objekter i Huércal-Overa.
           </p>
         </Text>
       </Content>

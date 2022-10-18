@@ -37,7 +37,7 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             <ImageGrid>
               <img src={Bedar} />
               <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                <NavLink to="/bedar">Bedar</NavLink>
+                <NavLink to="/bedar">Bédar</NavLink>
               </li>
             </ImageGrid>
           </Grid>
@@ -96,7 +96,7 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             <ImageGrid>
               <img src={BeachSrc} />
               <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                <NavLink to="/huercalovera">Huercal-Overa</NavLink>
+                <NavLink to="/huercalovera">Huércal-Overa</NavLink>
               </li>
             </ImageGrid>
           </Grid>
