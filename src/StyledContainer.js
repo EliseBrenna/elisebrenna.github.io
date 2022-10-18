@@ -47,6 +47,7 @@ h2 {
 
 p {
   margin: 0;
+  padding-bottom: 2rem;
   line-height: 1.5;
   width: 100%;
 }

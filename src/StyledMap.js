@@ -15,9 +15,10 @@ const StyledMap = styled.div`
 
 
   img {
-    width: 103%;
-    height: 400px;
+    width: 100%;
+    height: 52%;
     position: fixed;
+    display: block;
   }
 
   .pin {
@@ -26,7 +27,7 @@ const StyledMap = styled.div`
     height: 20px;
     border-radius: 50% 50% 50% 0;
     background: #040631;
-    position: fixed;
+    position: absolute;
     transform: rotate(-45deg);
     left: 78%;
     top: 59%;
@@ -92,7 +93,7 @@ const StyledMap = styled.div`
     z-index: 1;
     font-weight: 500;
     font-size: 0.8rem;
-    position: fixed;
+    position: absolute;
     left: 76%;
     top: 62%;
     margin: -20px 0 0 -20px;

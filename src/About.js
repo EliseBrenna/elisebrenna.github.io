@@ -16,7 +16,7 @@ const About = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
         <Text>
           <h2>Formidling av eiendom på solens kyst</h2>
           <p>
-          <p className="ingress">
+          <p>
             Ja, med 306 soldager i året velger vi å kalle Spanias østkyst
             nettopp dette.
           </p>
