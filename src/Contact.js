@@ -12,7 +12,7 @@ const Contact = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
       <Content>
         <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
         <Text>
-          <h2>Vi vil gjerne prate med deg</h2>
+          <h2>Vi vil gjerne høre fra deg</h2>
           <p>
             Har du spørsmål eller er du rett og slett bare litt nysgjerrig?{" "}
             <br />

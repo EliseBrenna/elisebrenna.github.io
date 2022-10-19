@@ -16,7 +16,7 @@ const StyledMap = styled.div`
 
   img {
     width: 100%;
-    height: 52%;
+    height: 55%;
     position: fixed;
     display: block;
   }
@@ -35,8 +35,6 @@ const StyledMap = styled.div`
     animation-name: bounce;
     animation-fill-mode: both;
     animation-duration: 1s;
-
-
   }
 
   .mojacar {
@@ -102,7 +100,11 @@ const StyledMap = styled.div`
     animation-duration: 1s;
     border-radius: 5px;
 
-    :hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: none;
+    :visited {
+      color: inherit;
     }
   }
 
@@ -131,7 +133,7 @@ const StyledMap = styled.div`
     top: 96%;
   }
 
-  .antasname {
+  .aljarizname {
     left: 56.3%;
     top: 99%;
   }

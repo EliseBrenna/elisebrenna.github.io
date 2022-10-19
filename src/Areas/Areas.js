@@ -10,7 +10,7 @@ import Aguilas from "../images/aguilas.jpg";
 import Allariz from "../images/allariz.jpg";
 import Bedar from "../images/bedar.jpg";
 import Turre from "../images/turre.jpg";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
