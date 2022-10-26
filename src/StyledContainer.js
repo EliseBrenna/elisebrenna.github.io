@@ -26,6 +26,10 @@ export const ImgContainer = styled.div`
   width: 45%;
   padding-right: 2rem;
 
+  @media (max-width: 700px) {
+    display: none;
+  }
+
   img {
     width: 90%;
   }
@@ -36,12 +40,17 @@ export const Text = styled.div`
   height: 100%;
   width: 49%;
 
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
   h2 {
     font-weight: 400;
     font-size: 2.2rem;
     margin-bottom: 2.1rem;
     margin-top: 0;
     width: 100%;
+    
   }
 
   p {
