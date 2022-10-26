@@ -106,13 +106,17 @@ export const Button = styled(NavLink)`
   text-decoration: none;
   margin: 0;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: ${(props) => (props.primary ? `#040631` : `white`)};
   color: ${(props) => (props.primary ? `white` : `#040631`)} !important;
   box-shadow: 0px 0px 0px 2px #040631 inset;
   font-family: "Inter";
   margin-right: 3rem;
   margin-top: 2rem;
+
+  @media (max-width: 700px) {
+    font-size: 1.2rem;
+  }
 
   :hover {
     transform: translateY(-2px);
