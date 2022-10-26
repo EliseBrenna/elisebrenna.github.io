@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const StyledContainer = styled.div`
   color: #040631;
@@ -88,28 +89,23 @@ export const ImageGrid = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(NavLink)`
   border-radius: 50px;
   border: none;
-  padding: 0.4rem;
+  padding: 0.6rem;
   transition: transform 450ms;
+  text-decoration: none;
   margin: 0;
   font-weight: 500;
   font-size: 1rem;
+  background-color: ${(props) => (props.primary ? `#040631` : `white`)};
+  color: ${(props) => (props.primary ? `white` : `#040631`)} !important;
+  box-shadow: 0px 0px 0px 2px #040631 inset;
+  font-family: "Inter";
+  margin-right: 3rem;
+  margin-top: 2rem;
 
   :hover {
-    background-color: #040631;
-    color: white;
     transform: translateY(-2px);
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    cursor: none;
-
-    :visited {
-      color: inherit;
-    }
   }
 `;

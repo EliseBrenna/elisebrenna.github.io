@@ -29,6 +29,11 @@ export const NavBar = styled.div`
   font-weight: 500;
   color: #040631;
   padding: 2rem 0;
+
+  @media (max-width: 700px) {
+    height: auto;
+    flex-wrap: wrap;
+  }
 `;
 
 export const MenuItems = styled.ul`
@@ -36,11 +41,21 @@ export const MenuItems = styled.ul`
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+
   li {
     border-radius: 50px;
-    padding: 0.4rem;
+    padding: 0.6rem;
     transition: transform 450ms;
     margin: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     
     :hover {
       background-color: #040631;
@@ -63,4 +78,9 @@ export const MenuItems = styled.ul`
 export const Logo = styled.img`
   height: 4.5rem;
   cursor: none;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: auto;
+  }
 `;

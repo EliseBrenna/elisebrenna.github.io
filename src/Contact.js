@@ -5,12 +5,13 @@ import {
   Content,
   Text,
 } from "./StyledContainer";
+import StreetsSrc from "./images/streets.jpg";
 
 const Contact = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
     <StyledContainer>
       <Content>
-        <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
+        <ImgContainer> <img src={StreetsSrc} /></ImgContainer>
         <Text>
           <h2>Vi vil gjerne høre fra deg</h2>
           <p>

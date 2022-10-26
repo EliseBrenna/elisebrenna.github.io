@@ -12,13 +12,17 @@ const StyledMap = styled.div`
     rgba(234, 191, 57, 0.46124387254901966) 15%,
     rgba(4, 6, 49, 0.486453956582633) 61%
   );
-
+  
 
   img {
     width: 100%;
     height: 55%;
     position: fixed;
     display: block;
+
+    @media (max-width: 700px) {
+    display: none;
+  }
   }
 
   .pin {
@@ -35,6 +39,10 @@ const StyledMap = styled.div`
     animation-name: bounce;
     animation-fill-mode: both;
     animation-duration: 1s;
+
+    @media (max-width: 700px) {
+    display: none;
+  }
   }
 
   .mojacar {
@@ -106,6 +114,10 @@ const StyledMap = styled.div`
     :visited {
       color: inherit;
     }
+
+    @media (max-width: 700px) {
+    display: none;
+  }
   }
 
   .mojacarname {
