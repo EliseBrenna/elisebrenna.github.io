@@ -7,6 +7,7 @@ export const StyledApp = styled.div`
   justify-content: center;
   font-family: "Inter", sans-serif;
   cursor: none;
+  
 
   .cursor {
     height: 9px;
@@ -29,6 +30,7 @@ export const NavBar = styled.div`
   font-weight: 500;
   color: #040631;
   padding: 2rem 0;
+  
 
   @media (max-width: 700px) {
     height: auto;

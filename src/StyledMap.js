@@ -11,7 +11,13 @@ const StyledMap = styled.div`
     rgba(255, 255, 255, 1) 0%,
     rgba(234, 191, 57, 0.46124387254901966) 15%,
     rgba(4, 6, 49, 0.486453956582633) 61%
+
+    
   );
+
+  @media (max-width: 700px) {
+    display: none;
+  }
   
 
   img {
