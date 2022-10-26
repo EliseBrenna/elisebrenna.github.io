@@ -18,6 +18,9 @@ export const StyledApp = styled.div`
     left: 0;
     pointer-events: none;
     z-index: 2;
+    @media (max-width: 700px) {
+      display: none;
+  }
   }
 `;
 
@@ -47,8 +50,9 @@ export const MenuItems = styled.ul`
     flex-direction: column;
     text-align: center;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding-top: 4rem;
+    padding-left: 0;
   }
 
   li {
