@@ -7,17 +7,10 @@ const StyledAreas = styled.div`
   margin: 2% 4%;
   justify-content: space-between;
 
-  a {
-    color: inherit;
-    cursor: none;
-    :visited {
-      color: inherit;
-    }
-  }
-
   img {
     height: 80%;
     padding-top: 1rem;
+
   }
 
   h2 {

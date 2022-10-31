@@ -4,6 +4,9 @@ import {
   ImgContainer,
   ImageGrid,
 } from "../StyledContainer";
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import BeachSrc from "../images/beach.jpg";
 import Aguilas from "../images/aguilas.jpg";
@@ -12,253 +15,237 @@ import Bedar from "../images/bedar.jpg";
 import Turre from "../images/turre.jpg";
 import { NavLink } from "react-router-dom";
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: "#040631;",
+  padding: theme.spacing(5),
+  textAlign: "center",
+  borderRadius: "1rem",
+  height: "2rem",
+  listStyleType: "none",
+  color: "white",
+}));
+
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
     <StyledContainer>
       <Content>
-        <Grid container spacing={4}>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={Aguilas} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+        <Grid container spacing={8}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/aguilas">Águilas</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={Allariz} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/aljariz">Aljariz</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={Bedar} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/bedar">Bédar</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={Turre} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/cabrera">Cabrera</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/calapanizo">Cala Panizo</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/carboneras">Carboneras</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/cuevasdelalmanzora">Cuevas Del Almanzora</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <Grid item xs={6} md={3}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/elpozodelesparto">El Pozo Del Esparto</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/garrucha">Garrucha</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/huercalovera">Huércal-Overa</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/lamuleria">La Muleria</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/lascunas">Las Cunas</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/losgallardos">Los Gallardos</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/loslobos">Los Lobos</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/lubrin">Lubrin</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/mojacar">Mojacar</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/palomares">Palomares</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/puertorey">Puerto Rey</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/pulpi">Pulpi</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/sanjuan">San Juan de los Terreros</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/sorbas">Sorbas</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/turre">Turre</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/urcal">Urcal</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/vera">Vera</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/veraplaya">Vera Playa</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={6} md={3}>
             {" "}
-            <ImageGrid>
-              <img src={BeachSrc} />
-              <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <li>
                 <NavLink to="/villaricos">Villaricos</NavLink>
               </li>
-            </ImageGrid>
+            </Item>
           </Grid>
         </Grid>
       </Content>
