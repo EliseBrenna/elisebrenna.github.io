@@ -19,7 +19,7 @@ export const StyledApp = styled.div`
     pointer-events: none;
     z-index: 2;
     @media (max-width: 700px) {
-      display: none;
+
   }
   }
 `;

@@ -20,15 +20,7 @@ const Contact = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
             Ikke nøl med å ta kontakt – helt uforpliktende så klart.
           </p>
           <p>
-            Trykk{" "}
-            <a
-              href="mailto:post@sunrisehomes.no"
-              onMouseEnter={textEnter}
-              onMouseLeave={textLeave}
-            >
-              her
-            </a>{" "}
-            for e-post eller ring 12345678.
+            E-post: post@sunrisehomes.no
           </p>
         </Text>
       </Content>
