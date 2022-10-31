@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(5),
   textAlign: "center",
   borderRadius: "1rem",
-  height: "2rem",
+  maxHeight: "1rem",
   listStyleType: "none",
   color: "white",
 }));
