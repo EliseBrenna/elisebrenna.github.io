@@ -8,6 +8,8 @@ export const StyledContainer = styled.div`
 
   a {
     color: inherit;
+    text-decoration: none;
+    font-weight: 500;
     cursor: none;
     :visited {
       color: inherit;
@@ -67,22 +69,10 @@ export const Text = styled.div`
 
 export const ImageGrid = styled.div`
   position: relative;
-  height: 100%;
-
-  img {
-    width: 100%;
-    height: 100%;
-    opacity: 50%;
-  }
-
-  div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 400;
-    text-align: center;
-  }
+  height: 8rem;
+  width: 10rem;
+  background-color: #040631;
+  border-radius: 2rem;
 
   a {
     position: absolute;
@@ -91,6 +81,11 @@ export const ImageGrid = styled.div`
     transform: translate(-50%, -50%);
     font-weight: 400;
     text-align: center;
+    color: white;
+    text-decoration: none !important;
+    :visited {
+      color: white;
+    }
   }
 
   li {
