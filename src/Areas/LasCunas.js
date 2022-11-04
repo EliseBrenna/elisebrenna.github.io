@@ -12,8 +12,8 @@ import {
         <Content>
           <ImgContainer>{/* <img src={Mojacar2Src} /> */}</ImgContainer>
           <Text>
-            <h2>La Mulería</h2>
-            <p>La Mulería er en landsby som ligger i Cuevas del Almanzora.</p>
+            <h2>La Cunas</h2>
+            <p>La Cunas er en landsby som ligger i Cuevas del Almanzora.</p>
             <p>
               Trykk{" "}
               <a

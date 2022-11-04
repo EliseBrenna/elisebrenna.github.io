@@ -16,13 +16,14 @@ import Turre from "../images/turre.jpg";
 import { NavLink } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: "#040631;",
+  backgroundColor: "white",
   padding: theme.spacing(5),
   textAlign: "center",
   borderRadius: "1rem",
   maxHeight: "1rem",
   listStyleType: "none",
-  color: "white",
+  color: "#040631",
+  boxShadow: "0 0.2rem 0.9375rem #252a311a",
 }));
 
 const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
@@ -31,221 +32,221 @@ const Areas = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
       <Content>
         <Grid container spacing={8}>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/aguilas">Águilas</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/aguilas">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Águilas</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/aljariz">Aljariz</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/aljariz">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Aljariz</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/bedar">Bédar</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/bedar">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Bédar</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/cabrera">Cabrera</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/cabrera">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Cabrera</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/calapanizo">Cala Panizo</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/calapanizo">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Cala Panizo</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/carboneras">Carboneras</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/carboneras">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Carboneras</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/cuevasdelalmanzora">Cuevas Del Almanzora</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/cuevasdelalmanzora">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Cuevas Del Almanzora</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/elpozodelesparto">El Pozo Del Esparto</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/elpozodelesparto">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>El Pozo Del Esparto</li>
+              </Item>
+            </NavLink>
           </Grid>
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/garrucha">Garrucha</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/garrucha">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Garrucha</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/huercalovera">Huércal-Overa</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/huercalovera">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Huércal-Overa</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/lamuleria">La Muleria</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/lamuleria">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>La Muleria</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/lascunas">Las Cunas</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/lascunas">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Las Cunas</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/losgallardos">Los Gallardos</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/losgallardos">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Los Gallardos</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/loslobos">Los Lobos</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/loslobos">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Los Lobos</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/lubrin">Lubrin</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/lubrin">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Lubrin</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/mojacar">Mojacar</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/mojacar">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Mojacar</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/palomares">Palomares</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/palomares">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Palomares</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/puertorey">Puerto Rey</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/puertorey">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Puerto Rey</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/pulpi">Pulpi</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/pulpi">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Pulpi</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/sanjuan">San Juan de los Terreros</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/sanjuan">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>San Juan de los Terreros</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/sorbas">Sorbas</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/sorbas">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Sorbas</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/turre">Turre</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/turre">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Turre</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/urcal">Urcal</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/urcal">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Urcal</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/vera">Vera</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/vera">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Vera</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/veraplaya">Vera Playa</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/veraplaya">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Vera Playa</li>
+              </Item>
+            </NavLink>
           </Grid>
 
           <Grid item xs={6} md={3}>
             {" "}
-            <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <li>
-                <NavLink to="/villaricos">Villaricos</NavLink>
-              </li>
-            </Item>
+            <NavLink to="/villaricos">
+              <Item onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li>Villaricos</li>
+              </Item>
+            </NavLink>
           </Grid>
         </Grid>
       </Content>

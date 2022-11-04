@@ -6,12 +6,13 @@ import {
   Text,
 } from "./StyledContainer";
 import StreetsSrc from "./images/streets.jpg";
+import VillageSrc from "./images/village.jpg";
 
 const Contact = ({ textEnter, textLeave, onMouseEnter, onMouseLeave }) => {
   return (
     <StyledContainer>
       <Content>
-        <ImgContainer> <img src={StreetsSrc} /></ImgContainer>
+        <ImgContainer> <img src={VillageSrc} /></ImgContainer>
         <Text>
           <h2>Vi vil gjerne høre fra deg</h2>
           <p>
